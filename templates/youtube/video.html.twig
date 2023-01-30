@@ -1,4 +1,9 @@
 {% extends "base.html.twig" %}
 
-{% block title %}Best video
+{% block title %}Best youtube video !
+{% endblock %}
+
+{% block body %}
+    <h2>{{ name }}</h2>
+    <div>{{ url|youtube_player|raw }}</div>
 {% endblock %}
